@@ -1,0 +1,106 @@
+{
+    "vsId": 53,
+    "algorithm": "SLH-DSA",
+    "mode": "keyGen",
+    "revision": "FIPS205",
+    "isSample": true,
+    "testGroups": [
+        {
+            "tgId": 1,
+            "testType": "AFT",
+            "parameterSet": "SLH-DSA-SHA2-128s",
+            "tests": [
+                {
+                    "tcId": 1,
+                    "deferred": false,
+                    "skSeed": "AC379F047FAAB2004F3AE32350AC9A3D",
+                    "skPrf": "829FFF0AA59E956A87F3971C4D58E710",
+                    "pkSeed": "0566D240CC519834322EAFBCC73C79F5",
+                    "sk": "AC379F047FAAB2004F3AE32350AC9A3D829FFF0AA59E956A87F3971C4D58E7100566D240CC519834322EAFBCC73C79F5A4B84F02E8BF0CBD54017B2D3C494B57",
+                    "pk": "0566D240CC519834322EAFBCC73C79F5A4B84F02E8BF0CBD54017B2D3C494B57"
+                },
+                {
+                    "tcId": 2,
+                    "deferred": false,
+                    "skSeed": "20D43B51FB11AF1FE3C6459B7BB90D50",
+                    "skPrf": "4F63BA1D6CC9B355D47E49C958658160",
+                    "pkSeed": "F420447CFE8F1823CE5BBFF0030CC69D",
+                    "sk": "20D43B51FB11AF1FE3C6459B7BB90D504F63BA1D6CC9B355D47E49C958658160F420447CFE8F1823CE5BBFF0030CC69D31A2F32390C22B1AB974B5F5A2B3844E",
+                    "pk": "F420447CFE8F1823CE5BBFF0030CC69D31A2F32390C22B1AB974B5F5A2B3844E"
+                },
+                {
+                    "tcId": 3,
+                    "deferred": false,
+                    "skSeed": "94FDCD4EDA1BBF7FB510FE16C42BFC57",
+                    "skPrf": "2859455BDA66A81FE212501B3D82572B",
+                    "pkSeed": "357DBB62C05296027861917D4AA53CF7",
+                    "sk": "94FDCD4EDA1BBF7FB510FE16C42BFC572859455BDA66A81FE212501B3D82572B357DBB62C05296027861917D4AA53CF7DF891E96BA5C7997319F7D39B2B455D4",
+                    "pk": "357DBB62C05296027861917D4AA53CF7DF891E96BA5C7997319F7D39B2B455D4"
+                },
+                {
+                    "tcId": 4,
+                    "deferred": false,
+                    "skSeed": "CFBC9AAE01B14B60660A4B952FD8DE83",
+                    "skPrf": "BDCCBE648D12BBC2CC87DAD9C08368B5",
+                    "pkSeed": "43560921C355C695A265E699E622EF1A",
+                    "sk": "CFBC9AAE01B14B60660A4B952FD8DE83BDCCBE648D12BBC2CC87DAD9C08368B543560921C355C695A265E699E622EF1A843CE5E8E46B7F9555B243560C4318D0",
+                    "pk": "43560921C355C695A265E699E622EF1A843CE5E8E46B7F9555B243560C4318D0"
+                },
+                {
+                    "tcId": 5,
+                    "deferred": false,
+                    "skSeed": "9690065F7163CC418040F256CB54240D",
+                    "skPrf": "FA1671C4A643551A08C4A764EFC1CD9E",
+                    "pkSeed": "533A5D3B0542D7DD050BD20FB52C9FEE",
+                    "sk": "9690065F7163CC418040F256CB54240DFA1671C4A643551A08C4A764EFC1CD9E533A5D3B0542D7DD050BD20FB52C9FEE5F7D450743C9B1D46E7236044039CFAD",
+                    "pk": "533A5D3B0542D7DD050BD20FB52C9FEE5F7D450743C9B1D46E7236044039CFAD"
+                },
+                {
+                    "tcId": 6,
+                    "deferred": false,
+                    "skSeed": "73E804BC6F3910159A18E6E6956D8B27",
+                    "skPrf": "51FF686279E166EBBA8BD7464300BD72",
+                    "pkSeed": "6771681B8BCCA1A56B52EB7F51E76F16",
+                    "sk": "73E804BC6F3910159A18E6E6956D8B2751FF686279E166EBBA8BD7464300BD726771681B8BCCA1A56B52EB7F51E76F1686A7542542343B4A3792BB04B15B8A8A",
+                    "pk": "6771681B8BCCA1A56B52EB7F51E76F1686A7542542343B4A3792BB04B15B8A8A"
+                },
+                {
+                    "tcId": 7,
+                    "deferred": false,
+                    "skSeed": "004495458DE525A6A64B240F337A2069",
+                    "skPrf": "97462745841826B861EF70638B8A2812",
+                    "pkSeed": "9FEDA0C99720952ED0726C84EA3B982F",
+                    "sk": "004495458DE525A6A64B240F337A206997462745841826B861EF70638B8A28129FEDA0C99720952ED0726C84EA3B982F86AC5C8B50952E86262C67C508CF027F",
+                    "pk": "9FEDA0C99720952ED0726C84EA3B982F86AC5C8B50952E86262C67C508CF027F"
+                },
+                {
+                    "tcId": 8,
+                    "deferred": false,
+                    "skSeed": "09D4BB67BB39625C640D68CD554083FB",
+                    "skPrf": "726EE73D0F8195EACD814C848CCEF1C6",
+                    "pkSeed": "79E8D3381E86F899FA3695DF1AFFEEFD",
+                    "sk": "09D4BB67BB39625C640D68CD554083FB726EE73D0F8195EACD814C848CCEF1C679E8D3381E86F899FA3695DF1AFFEEFDF3D5A8AD2DADDC9B96895550ADA632BC",
+                    "pk": "79E8D3381E86F899FA3695DF1AFFEEFDF3D5A8AD2DADDC9B96895550ADA632BC"
+                },
+                {
+                    "tcId": 9,
+                    "deferred": false,
+                    "skSeed": "FAAC9F16C2825CC35AA01EE0AF8069EE",
+                    "skPrf": "0F4A13E591FA799A8F7E60A164625EAB",
+                    "pkSeed": "D403DEBDBA2559723A29C957DE1356B6",
+                    "sk": "FAAC9F16C2825CC35AA01EE0AF8069EE0F4A13E591FA799A8F7E60A164625EABD403DEBDBA2559723A29C957DE1356B6D812A1365E26107377506EE0F0D7E194",
+                    "pk": "D403DEBDBA2559723A29C957DE1356B6D812A1365E26107377506EE0F0D7E194"
+                },
+                {
+                    "tcId": 10,
+                    "deferred": false,
+                    "skSeed": "03C212F69E0E14E8349DC112C8AE1BF3",
+                    "skPrf": "9E73D3DFE0B33628FC66794DDC0EF313",
+                    "pkSeed": "255C6A2752BC20084496FAC556FFB6E9",
+                    "sk": "03C212F69E0E14E8349DC112C8AE1BF39E73D3DFE0B33628FC66794DDC0EF313255C6A2752BC20084496FAC556FFB6E96456955F00D9CF1A6E24C56DB4D8C245",
+                    "pk": "255C6A2752BC20084496FAC556FFB6E96456955F00D9CF1A6E24C56DB4D8C245"
+                }
+            ]
+        }
+    ]
+}

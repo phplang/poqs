@@ -1,0 +1,106 @@
+{
+    "vsId": 53,
+    "algorithm": "SLH-DSA",
+    "mode": "keyGen",
+    "revision": "FIPS205",
+    "isSample": true,
+    "testGroups": [
+        {
+            "tgId": 4,
+            "testType": "AFT",
+            "parameterSet": "SLH-DSA-SHAKE-128f",
+            "tests": [
+                {
+                    "tcId": 31,
+                    "deferred": false,
+                    "skSeed": "CD4A308C03D970508572C0815D7488B7",
+                    "skPrf": "F3FD6D2DCC7E5120FA544846AEDDED81",
+                    "pkSeed": "BC435C3E66E4C2E4FBC09779DA5F74D4",
+                    "sk": "CD4A308C03D970508572C0815D7488B7F3FD6D2DCC7E5120FA544846AEDDED81BC435C3E66E4C2E4FBC09779DA5F74D44EA0E0DF05C2457BCC81F59928433390",
+                    "pk": "BC435C3E66E4C2E4FBC09779DA5F74D44EA0E0DF05C2457BCC81F59928433390"
+                },
+                {
+                    "tcId": 32,
+                    "deferred": false,
+                    "skSeed": "E37CA2AD739B79C21EB965C52CE5A2D5",
+                    "skPrf": "802E2DABAF381A4D274690BF4DEB2550",
+                    "pkSeed": "043076AD7906A7A35CA4D35096681332",
+                    "sk": "E37CA2AD739B79C21EB965C52CE5A2D5802E2DABAF381A4D274690BF4DEB2550043076AD7906A7A35CA4D35096681332861281E9FFE4FA3C7436D6F77FB1E369",
+                    "pk": "043076AD7906A7A35CA4D35096681332861281E9FFE4FA3C7436D6F77FB1E369"
+                },
+                {
+                    "tcId": 33,
+                    "deferred": false,
+                    "skSeed": "58251310C0FDAC00EFAC6EE483CA1D24",
+                    "skPrf": "32F7ED1774B371C58EE6C0BE00F9D071",
+                    "pkSeed": "EC374C567D4522F0BDD0E0F0EC31C83F",
+                    "sk": "58251310C0FDAC00EFAC6EE483CA1D2432F7ED1774B371C58EE6C0BE00F9D071EC374C567D4522F0BDD0E0F0EC31C83F8C7DF49C247C2385A24E9DA40805233C",
+                    "pk": "EC374C567D4522F0BDD0E0F0EC31C83F8C7DF49C247C2385A24E9DA40805233C"
+                },
+                {
+                    "tcId": 34,
+                    "deferred": false,
+                    "skSeed": "2C7D8E05992F76BAAD4758702B36F096",
+                    "skPrf": "42F4ED6217CC6D51C5A010E56C208012",
+                    "pkSeed": "57985DC732E219EDCF5F18D7344857BC",
+                    "sk": "2C7D8E05992F76BAAD4758702B36F09642F4ED6217CC6D51C5A010E56C20801257985DC732E219EDCF5F18D7344857BCDE95E9E3F2375846AE5826621C4A8B01",
+                    "pk": "57985DC732E219EDCF5F18D7344857BCDE95E9E3F2375846AE5826621C4A8B01"
+                },
+                {
+                    "tcId": 35,
+                    "deferred": false,
+                    "skSeed": "7275C8095190AF67F137710F858AD414",
+                    "skPrf": "978F18A9188ABD21B17BA357A59A9758",
+                    "pkSeed": "B99532D932262AAC501E19D2BDC7CB6D",
+                    "sk": "7275C8095190AF67F137710F858AD414978F18A9188ABD21B17BA357A59A9758B99532D932262AAC501E19D2BDC7CB6D7CEA7EEDD3C87AAB394E065CBA92513F",
+                    "pk": "B99532D932262AAC501E19D2BDC7CB6D7CEA7EEDD3C87AAB394E065CBA92513F"
+                },
+                {
+                    "tcId": 36,
+                    "deferred": false,
+                    "skSeed": "7D03A556493174E82B43EBE49F51C95F",
+                    "skPrf": "85157D8FADF5F8DCF613B2964FD6E4EA",
+                    "pkSeed": "D5D51AC2A0066E5FDE57E6D5C8350FC5",
+                    "sk": "7D03A556493174E82B43EBE49F51C95F85157D8FADF5F8DCF613B2964FD6E4EAD5D51AC2A0066E5FDE57E6D5C8350FC5AEE835671CA471F1AC3E1B5A03FBC22C",
+                    "pk": "D5D51AC2A0066E5FDE57E6D5C8350FC5AEE835671CA471F1AC3E1B5A03FBC22C"
+                },
+                {
+                    "tcId": 37,
+                    "deferred": false,
+                    "skSeed": "814BF8048BC36B889B5A10D759865DCB",
+                    "skPrf": "C2B231C567D50618D041F47D38B57635",
+                    "pkSeed": "65618396528091DB838E99254118C999",
+                    "sk": "814BF8048BC36B889B5A10D759865DCBC2B231C567D50618D041F47D38B5763565618396528091DB838E99254118C999E0BD912407BD7293F7DEEF5A9A2E2ECF",
+                    "pk": "65618396528091DB838E99254118C999E0BD912407BD7293F7DEEF5A9A2E2ECF"
+                },
+                {
+                    "tcId": 38,
+                    "deferred": false,
+                    "skSeed": "AF66132E95ABBDC71C7D357C7D91D8CE",
+                    "skPrf": "94F69CEFADF8A4849969BB674A03CC29",
+                    "pkSeed": "96C2869C7EA0C559499FED9CDEF9DE34",
+                    "sk": "AF66132E95ABBDC71C7D357C7D91D8CE94F69CEFADF8A4849969BB674A03CC2996C2869C7EA0C559499FED9CDEF9DE347C42CF2F90AFB8E01443EA48ED4F78D7",
+                    "pk": "96C2869C7EA0C559499FED9CDEF9DE347C42CF2F90AFB8E01443EA48ED4F78D7"
+                },
+                {
+                    "tcId": 39,
+                    "deferred": false,
+                    "skSeed": "7B934FC72B4542BC311D967B08F48722",
+                    "skPrf": "99DBC8B8457C43BB9D88C7C71EB26FB4",
+                    "pkSeed": "2177E603A4547DF85B1EAA3E4AD6229F",
+                    "sk": "7B934FC72B4542BC311D967B08F4872299DBC8B8457C43BB9D88C7C71EB26FB42177E603A4547DF85B1EAA3E4AD6229F101C447037A0FEB121B3B941B91009B8",
+                    "pk": "2177E603A4547DF85B1EAA3E4AD6229F101C447037A0FEB121B3B941B91009B8"
+                },
+                {
+                    "tcId": 40,
+                    "deferred": false,
+                    "skSeed": "CDC049800B5C73AE2B4365C01A38F55E",
+                    "skPrf": "9101C8D6969A01449EA29C9865A4224C",
+                    "pkSeed": "6946F9FEEBD2CDAE40898A7061734702",
+                    "sk": "CDC049800B5C73AE2B4365C01A38F55E9101C8D6969A01449EA29C9865A4224C6946F9FEEBD2CDAE40898A706173470205E926BD395F075DA540BE957E5D08C8",
+                    "pk": "6946F9FEEBD2CDAE40898A706173470205E926BD395F075DA540BE957E5D08C8"
+                }
+            ]
+        }
+    ]
+}
