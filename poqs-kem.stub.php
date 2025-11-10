@@ -15,7 +15,7 @@ class KEM {
     public function getPublicKey(): ?string {}
     public function getSecretKey(): ?string {}
 
-    public function encaps(string $shared_secret, ?string $seed = null): string {}
+    public function encaps(?string $seed = null): array {}
     public function decaps(string $ciphertext): string {}
 
     static public function algos(): array {}

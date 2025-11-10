@@ -69,9 +69,9 @@ PHP_METHOD(POQS_KEM, newFromSeed) {
 }
 
 PHP_METHOD(POQS_KEM, encaps) {
-    zend_string *shared_secret, *seed = nullptr;
+    zend_string *seed = nullptr;
 
-    if (zend_parse_parameters_throw(ZEND_NUM_ARGS(), "S|S!", &shared_secret, &seed) == FAILURE) {
+    if (zend_parse_parameters_throw(ZEND_NUM_ARGS(), "S!", &seed) == FAILURE) {
         RETURN_THROWS();
     }
 
@@ -86,7 +86,7 @@ PHP_METHOD(POQS_KEM, encaps) {
         RETURN_THROWS();
     }
 
-    POQS_CHECK_LEN(shared_secret);
+    Zeval::String shared_secret(objval->oqs->length_shared_secret);
     Zeval::String ciphertext(objval->oqs->length_ciphertext);
     OQS_STATUS status;
     if (seed) {
@@ -99,13 +99,13 @@ PHP_METHOD(POQS_KEM, encaps) {
         POQS_CHECK_LEN_EX(seed, objval->oqs->length_encaps_seed);
         status = OQS_KEM_encaps_derand(objval->oqs,
             ciphertext,
-            reinterpret_cast<uint8_t*>(ZSTR_VAL(shared_secret)),
+            shared_secret,
             objval->publicKey(),
             reinterpret_cast<uint8_t*>(ZSTR_VAL(seed)));
     } else {
         status = OQS_KEM_encaps(objval->oqs,
             ciphertext,
-            reinterpret_cast<uint8_t*>(ZSTR_VAL(shared_secret)),
+            shared_secret,
             objval->publicKey());
     }
 
@@ -114,7 +114,9 @@ PHP_METHOD(POQS_KEM, encaps) {
         RETURN_THROWS();
     }
 
-    RETURN_STR(ciphertext.terminate().release());
+    array_init(return_value);
+    add_assoc_str(return_value, "ciphertext", ciphertext.terminate().release());
+    add_assoc_str(return_value, "shared_secret", shared_secret.terminate().release());
 }
 
 PHP_METHOD(POQS_KEM, decaps) {

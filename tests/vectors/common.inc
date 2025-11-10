@@ -185,8 +185,9 @@ class ACVPTest {
     public function runEncapsulationTest(): void {
         $group = $this->testGroup;
         $alg = new \POQS\KEM($group->parameterSet, $this->ek, $this->dk);
-        $c = $alg->encaps($this->k, $this->m);
-        $this->assertSameBinary($c, $this->c, "encaps");
+        $enc = $alg->encaps($this->m);
+        $this->assertSameBinary($enc['ciphertext'],    $this->c, "encaps ciphertext");
+        $this->assertSameBinary($enc['shared_secret'], $this->k, "encaps shared_secret");
     }
 
     public function runDecapsulationTest(): void {

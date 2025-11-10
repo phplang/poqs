@@ -1,5 +1,5 @@
 /* This is a generated file, edit the .stub.php file instead.
- * Stub hash: 8dcff7b683e58f52b1aa9e157bef8e9598fcb841 */
+ * Stub hash: b833690d18443a67e00bf4231cd862dc0f694fb7 */
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_class_POQS_KEM___construct, 0, 0, 1)
 	ZEND_ARG_TYPE_INFO(0, method_name, IS_STRING, 0)
@@ -20,8 +20,7 @@ ZEND_END_ARG_INFO()
 
 #define arginfo_class_POQS_KEM_getSecretKey arginfo_class_POQS_KEM_getPublicKey
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_POQS_KEM_encaps, 0, 1, IS_STRING, 0)
-	ZEND_ARG_TYPE_INFO(0, shared_secret, IS_STRING, 0)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_POQS_KEM_encaps, 0, 0, IS_ARRAY, 0)
 	ZEND_ARG_TYPE_INFO_WITH_DEFAULT_VALUE(0, seed, IS_STRING, 1, "null")
 ZEND_END_ARG_INFO()
 
