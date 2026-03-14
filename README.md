@@ -50,7 +50,7 @@ The "shared secret" may be immediately used for encryption, or recreated later f
 Note here that we store openssl encrypt payloads with the randomly generated IV used
 as is standard in symmetric encryption. This is not specific to OQS key encapsulation.
 
-```
+```php
 <?php
 $kem = new \POQS\KEM("ML-KEM-512",
     base64_decode(file_get_contents(__DIR__ . "/examples/scratch/ml-kem-512-key64.public")),
@@ -79,7 +79,7 @@ KEM secret key.
 We can use this "shared secret" to perform ordinary decryption of the encrypted payload,
 with its bundled IV, to retrieve the original plaintext message.
 
-```
+```php
 <?php
 
 $kem = new \POQS\KEM("ML-KEM-512",
