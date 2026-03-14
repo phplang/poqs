@@ -83,7 +83,7 @@ with its bundled IV, to retrieve the original plaintext message.
 <?php
 
 $kem = new \POQS\KEM("ML-KEM-512",
-    null /* public key not required for encapsulation */,
+    null /* public key not required for deencapsulation */,
     base64_decode(file_get_contents(__DIR__ . "/examples/scratch/ml-kem-512-key64.secret")));
 
 
