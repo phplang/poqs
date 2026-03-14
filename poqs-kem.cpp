@@ -71,7 +71,7 @@ PHP_METHOD(POQS_KEM, newFromSeed) {
 PHP_METHOD(POQS_KEM, encaps) {
     zend_string *seed = nullptr;
 
-    if (zend_parse_parameters_throw(ZEND_NUM_ARGS(), "S!", &seed) == FAILURE) {
+    if (zend_parse_parameters_throw(ZEND_NUM_ARGS(), "|S!", &seed) == FAILURE) {
         RETURN_THROWS();
     }
 
