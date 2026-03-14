@@ -60,7 +60,7 @@ PHP_METHOD(POQS_KEM, newFromSeed) {
     objval->secretKey() = Zeval::String(objval->oqs->length_secret_key);
     if (OQS_SUCCESS != OQS_KEM_keypair_derand(objval->oqs, objval->publicKey(), objval->secretKey(),
             reinterpret_cast<uint8_t*>(ZSTR_VAL(seed)))) {
-        zval_dtor(return_value);
+        zval_ptr_dtor(return_value);
         RETVAL_NULL();
         zend_throw_exception_ex(poqs_error_exception_ce, 0,
             "Failed generating new keypair for '%s' from seed", objval->methodName());
